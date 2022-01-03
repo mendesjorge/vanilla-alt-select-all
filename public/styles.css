@@ -1,0 +1,118 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.content-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+
+	background: #F3F3F3;
+}
+
+.previewer{
+	z-index: 1;
+}
+
+.picker-container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	background: #FFFFFF;
+	/* box-shadow: 0px 5.40459px 27.023px #E8EAEF; */
+	border-radius: 0px 43.2368px 43.2368px 0px;
+
+	z-index: 10;
+	padding: 20px;
+
+}
+
+.picker-title{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 29px;
+	letter-spacing: 0.1em;
+	text-decoration: underline;
+
+	color: #A7A7A7;
+}
+
+.picker-content{
+	
+}
+
+.pick-list{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px 0;
+}
+
+.list-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 0;
+
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 44px;
+}
+
+.cross-text{
+	text-decoration: line-through;
+}
